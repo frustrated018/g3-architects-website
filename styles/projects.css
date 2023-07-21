@@ -126,6 +126,62 @@ main {
     font-weight: 700px;
 }
 
+/* Features section related styles */
+
+.features {
+    margin-top: 130px;
+    display: flex;
+    gap: 145px;
+}
+
+.features-content p {
+    margin-bottom: 30px;
+    margin-top: 24px;
+}
+
+.features-content .section-title {
+    margin-bottom: 0px;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.features-content .cards {
+    padding: 30px 42px 30px 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+/* features section img related styles */
+
+.ten-year-badge {
+    color: #FFF;
+    width: 260px;
+    border-radius: 8px;
+    padding: 40px;
+    background-color: #FF900E;
+    text-align: center;
+    position: relative;
+    bottom: 125px;
+    right: 100px;
+}
+
+.ten-year-badge h2 {
+    font-size: 65px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.ten-year-badge p {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+
+
+
 /* Facts seciton realted styles */
 .facts-card-container {
     display: flex;
@@ -156,22 +212,26 @@ main {
 
 /* Sponsors section realted styles */
 
-.sponsors{
+.sponsors {
     text-align: center;
 }
-.sponsors-img-container{
+
+.sponsors-img-container {
     display: flex;
     justify-content: space-evenly;
     gap: 1rem;
     align-items: center;
 }
-.sponsors-img-container img{
+
+.sponsors-img-container img {
     width: 165px;
 }
-.sponsors h3{
+
+.sponsors h3 {
     margin-bottom: .5rem;
 }
-.sponsors p{
+
+.sponsors p {
     margin-bottom: 2rem;
     margin-top: 1rem;
 }
@@ -192,8 +252,8 @@ main {
 
     .teams-container,
     .facts-card-container,
-    .sponsors-img-container
-    {
+    .features,
+    .sponsors-img-container {
         flex-direction: column-reverse;
     }
 
@@ -212,11 +272,21 @@ main {
         padding-right: 20px;
         gap: 1rem;
     }
-    .facts>.section-title{
+
+    .facts>.section-title {
         margin-bottom: 1rem;
     }
-    .facts p{
+
+    .facts p {
         margin-bottom: 2.5rem;
+    }
+    .features-img-container img {
+        width: 70%;
+    }
+
+
+    .ten-year-badge {
+        position: static;
     }
 }
 
@@ -228,8 +298,8 @@ main {
 
     nav,
     .teams-container,
-    .sponsors-img-container
-    {
+    .features,
+    .sponsors-img-container {
         flex-direction: column;
     }
 }
